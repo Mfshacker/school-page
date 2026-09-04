@@ -33,3 +33,16 @@ The `manage-user` Edge Function is already deployed in the Supabase project. If 
 6. Admin creates a Staff-only calendar event; staff sees it, learner does not.
 7. Admin edits an academic achievement; the public homepage updates.
 8. Admin edits school settings; the public contact section updates.
+
+
+## School details included
+- Location: Nkowankowa, Limpopo
+- EMIS No.: 995503201
+- Phase: Combined School
+- Sector: Independent
+- Quintile: To be updated
+- Status: Open
+- Specialisation: Comprehensive
+- Address: 201 Unit, Industrial Area, Nkowankowa, 0850, Limpopo
+- Telephone: 015 303 2969
+- Slogan: Excellence Through Education

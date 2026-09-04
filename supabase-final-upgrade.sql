@@ -76,3 +76,14 @@ select * from (values
 where not exists (select 1 from public.academic_achievements);
 
 insert into public.school_settings (id,school_name) values (1,'St George College') on conflict (id) do nothing;
+
+
+-- St George College verified school details from the supplied school information.
+-- This updates the existing singleton settings row so the public website uses the real details.
+update public.school_settings
+set school_name='St George College',
+    phone='015 303 2969',
+    email='',
+    address='201 Unit, Industrial Area, Nkowankowa, 0850, Limpopo',
+    updated_at=now()
+where id=1;

@@ -19,3 +19,23 @@ button,.btn{cursor:pointer;transition:transform .15s ease,opacity .15s ease,box-
 @media(max-width:800px){.brand-logo img{width:170px;height:62px}.brand-logo.light img{width:180px;height:76px}}
 @media(max-width:520px){.brand-logo img{width:160px;height:58px}.brand-logo.light img{width:170px;height:72px}}
 .school-details{padding-top:55px}.facts-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}.fact{background:#f4f6f9;border:1px solid #e1e6ed;border-radius:12px;padding:20px}.fact b,.fact span{display:block}.fact b{font-size:13px}.fact span{margin-top:5px;color:#4e5b6e}.brand-logo img{width:74px;height:74px;object-fit:contain}.nav .brand-logo img{width:64px;height:64px}.loginbox .brand-logo img{width:110px;height:110px;object-fit:contain}.portal aside .brand-logo img{width:82px;height:82px;object-fit:contain}@media(max-width:800px){.facts-grid{grid-template-columns:1fr 1fr}}@media(max-width:520px){.facts-grid{grid-template-columns:1fr}}
+/* St. George College branded modal alerts — replaces browser/GitHub-style dialogs */
+.sgc-dialog-backdrop{position:fixed;inset:0;background:rgba(10,22,40,.52);backdrop-filter:blur(5px);display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .18s ease,visibility .18s ease;z-index:99999}
+.sgc-dialog-backdrop.open{opacity:1;visibility:visible;pointer-events:auto}
+.sgc-dialog{position:relative;width:min(460px,100%);background:#fff;border:1px solid #e1e6ed;border-radius:18px;box-shadow:0 24px 70px rgba(7,21,39,.25);padding:26px;display:grid;grid-template-columns:52px 1fr;gap:0 16px;transform:translateY(12px) scale(.98);transition:transform .18s ease}
+.sgc-dialog-backdrop.open .sgc-dialog{transform:translateY(0) scale(1)}
+.sgc-dialog-icon{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:#eaf0f8;color:#14294c;font-size:24px;font-weight:900;grid-row:1/3}
+.sgc-dialog.success .sgc-dialog-icon{background:#e9f6ef;color:#26734d}
+.sgc-dialog.error .sgc-dialog-icon{background:#fff0ed;color:#a33a2b}
+.sgc-dialog.warning .sgc-dialog-icon{background:#fff6e4;color:#a56c19}
+.sgc-dialog-body h3{margin:2px 40px 6px 0;color:#14294c;font-size:20px;line-height:1.2}
+.sgc-dialog-body p{margin:0;color:#5e6a7c;font-size:14px;line-height:1.6;white-space:pre-line}
+.sgc-dialog-close{position:absolute;right:14px;top:11px;border:0;background:transparent;color:#7b8797;font-size:28px;line-height:1;cursor:pointer;padding:4px 8px}
+.sgc-dialog-close:hover{color:#14294c;opacity:1;transform:none}
+.sgc-dialog-actions{grid-column:1/-1;display:flex;justify-content:flex-end;gap:9px;margin-top:22px}
+.sgc-dialog-actions button{min-width:92px;padding:10px 16px;border-radius:8px;font:inherit;font-weight:800;cursor:pointer}
+.sgc-dialog-primary{border:0;background:#14294c;color:#fff}
+.sgc-dialog-secondary{border:1px solid #d8dee7;background:#fff;color:#35445a}
+.sgc-dialog-actions button:focus-visible{outline:3px solid rgba(197,145,56,.4);outline-offset:2px}
+body.sgc-dialog-open{overflow:hidden}
+@media(max-width:520px){.sgc-dialog{padding:22px;grid-template-columns:44px 1fr;gap:0 12px}.sgc-dialog-icon{width:44px;height:44px;font-size:20px}.sgc-dialog-body h3{font-size:18px}.sgc-dialog-body p{font-size:13px}.sgc-dialog-actions{margin-top:18px}.sgc-dialog-actions button{flex:1}}

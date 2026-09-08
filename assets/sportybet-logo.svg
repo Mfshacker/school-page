@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 300" role="img" aria-label="SportyBet">
+  <g fill="#e41827">
+    <circle cx="90" cy="205" r="22"/><circle cx="135" cy="125" r="22"/>
+    <text x="105" y="220" font-family="Arial, Helvetica, sans-serif" font-size="190" font-weight="900" font-style="italic" letter-spacing="-9">SportyBet</text>
+  </g>
+</svg>
